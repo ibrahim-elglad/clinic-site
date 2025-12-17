@@ -54,6 +54,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 }
 
 // لو وصل هنا → يبقى دخل الباسوورد صح → نعرض المواعيد
+
 require "db.php";
 ?>
 <!DOCTYPE html>
@@ -106,7 +107,9 @@ require "db.php";
                 <th>Appointment Date</th>
             </tr>
             <?php
-            $result = mysqli_query($conn, "SELECT * FROM appointments ORDER BY datetime DESC");
+            // $result = mysqli_query($conn, "SELECT * FROM appointments ORDER BY datetime DESC");
+            $result = mysqli_query($conn, "SELECT * FROM appointments ORDER BY id ASC");
+
             if (mysqli_num_rows($result) > 0) {
                 while($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>
