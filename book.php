@@ -36,11 +36,11 @@ if ($stmt->execute()) {
     <body>
         <div class="box">
             <h1>appointment sucsessfly</h1>
-            <p style="font-size:22px;margin:20px 0;">thank you<strong>' . htmlspecialchars($name) . '</strong></p>
+            <p style="font-size:22px;margin:20px 0;">thank you <strong>' . htmlspecialchars($name) . '</strong></p>
             <p style="font-size:20px;">datetime: <strong>' . date('d-m-Y h:i A', strtotime($datetime)) . '</strong></p>
             <hr style="margin:30px 0;">
-            </clinic/a href="index.html" class="btn">back the main</a>
-            <a href="/clinic/view_appointments.php" class="btn">Show All Date</a>
+            <a href="index.html" class="btn">back the main</a>
+            <a href="view_appointments.php" class="btn">Show All Date</a>
         </div>
     </body>
     </html>';

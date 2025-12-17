@@ -1,5 +1,5 @@
-<?php
-$host = "localhost";
+ <?php 
+ $host = "localhost";
 $user = "root";
 $pass = "";                    // لو عندك باسوورد حطه هنا
 $db   = "clinic_db";
@@ -12,4 +12,7 @@ if (!$conn) {
 
 // لدعم الحروف العربية
 mysqli_set_charset($conn, "utf8mb4");
-?>
+?> 
+
+
+
